@@ -1,4 +1,4 @@
-# Bluetoot
+# Bluetooth
 
 Módulo python que utiliza o SDbus para iniciar o advertising do bluetooth.
 

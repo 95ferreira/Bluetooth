@@ -1,6 +1,6 @@
 #include "advertising.h"
 
-char *m_data;
+char m_data[32];
 
 static int  release_advertising(sd_bus_message *m, void *userdata, sd_bus_error *ret_error)
 {
@@ -70,7 +70,7 @@ void stop_advertising(sd_bus *bus)
 	call_method(bus, DESTINATION, PATH, INTERFACE_ADVERTISEMENT, METHOD_UNREGISTER, NULL,  "o", PATH_DATA_ADVERT);
 }
 
-void set_manufacturer_data(char *data)
+void set_manufacturer_data(const char *data)
 {
-	m_data = data;
+	strncpy(m_data, data, 31);
 }

@@ -1,0 +1,5 @@
+#define INTERFACE_ADAPTER "org.bluez.Adapter1"
+#define DESTINATION "org.bluez"
+#define PATH "/org/bluez/hci0"
+#define METHOD_DISCOVERY "StartDiscovery"
+#define METHOD_SET_FILTER "SetDiscoveryFilter"

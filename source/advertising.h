@@ -87,6 +87,6 @@ void stop_advertising(sd_bus *bus);
  *
 */
 
-void set_manufacturer_data(char *data);
+void set_manufacturer_data(const char *data);
 
 #endif

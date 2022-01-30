@@ -43,7 +43,7 @@ void advert(const char * data)
 	sd_bus_message *reply = NULL;
 	
 	connect_bus(&bus);
-	set_manufacturer_data("teste");
+	set_manufacturer_data(data);
 	start_advertising(bus);
 
 	for(;;)
